@@ -35,7 +35,7 @@ const MovieDetails = () => {
               uri: `https://image.tmdb.org/t/p/w500${movie?.poster_path}`,
             }}
             className="w-full h-[550px]"
-            resizeMode="stretch"
+            resizeMode="cover"
           />
         </View>
         <View className="flex-col items-start justify-center mt-5 px-5">
