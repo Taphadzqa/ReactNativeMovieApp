@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+# Hello, universe! 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
@@ -8,6 +8,10 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
    ```bash
    npm install
+   ```
+
+   ```bash
+   npm install nativewind tailwindcss react-native-animated react-native-safe-area-context
    ```
 
 2. Start the app
@@ -25,26 +29,23 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+3. Create an account on Appwrite and save your IDs in a `.env` file as per below:
 
-When you're ready, run:
+   EXPO_PUBLIC_MOVIE_API_KEY='YOUR_API_KEY_GOES_HERE'
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID='YOUR_PROJECT_ID_GOES_HERE'
+   EXPO_PUBLIC_APPWRITE_DATABASE_ID='YOUR_DATABASE_ID_GOES_HERE'
+   EXPO_PUBLIC_APPWRITE_COLLECTION_ID='YOUR_COLLECTION_ID_GOES_HERE'
 
-```bash
-npm run reset-project
-```
+4. Create a collection and call it `metrics`
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+5. Add the columns below to your collection:
 
-## Learn more
+   -> searchTerm
+   -> count
+   -> poster_url
+   -> movie_id
+   -> title
 
-To learn more about developing your project with Expo, look at the following resources:
+6. Make contributions
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+You can contribute to the project by adding additional tabs and functionality. The `Profile` and `Saved` tabs both have basic styling only.
