@@ -10,10 +10,6 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npm install
    ```
 
-   ```bash
-   npm install nativewind tailwindcss react-native-animated react-native-safe-area-context
-   ```
-
 2. Start the app
 
    ```bash
